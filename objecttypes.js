@@ -11,3 +11,10 @@ console.log(a)
 console.log(b)
 //indexing starts with 0
 console.log(b[3])
+
+//javascript object
+person = { sno:1,name: "Arun", city: "Agra"}
+
+console.log(person)
+console.log(person.name)
+console.log(person['name'])
