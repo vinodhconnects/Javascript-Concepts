@@ -1,0 +1,69 @@
+case 1
+
+a=[234,34,5,3]
+
+b=a //pass by reference , a and b are same in terms of value
+
+  //impact : a changed  b?  also changes
+  
+  
+case 2
+
+a= [34,35,6,45]
+
+b = [...a]  // a and b are same in terms of value
+            //pass by value
+			
+	//impact  //if a changes , b doesn't changed
+	
+	
+case 3
+
+c=[12,45,67]
+
+a=[35,67,7,8798, c ]
+
+  b = [...a] //pass by value
+  
+    // if a is changed  , b is not changed
+	// if c is changed , the impact would be both on a and b
+	
+case 4
+
+c=[12,45,67]
+
+a=[35,67,7,8798, c ]
+
+b = [...a]
+b[4] = [...a[4]]// pass by value
+
+   /// if a is changed, b is not changed
+   // if c is changed ,a would be affect ,no impact on b
+   
+case 5
+
+c=[12,45,67]
+
+a=[35,67,7,8798, ...c ]
+
+in this case , we wont get a nested array and elements of c are spread on a
+
+case 6
+
+c=[12,45,67]
+
+a=[35,67,7,8798, [...c] ]
+
+b = [...a]
+
+in this case , we wont get a nested array and elements of c are spread on a
+
+if c is changes, there wont be any impact on both a and b 
+
+if we manipulate the nested array by using b , a will be impacted, not other elements
+
+  if we manipulate the nested array by using a, b will impacted , not other elements
+
+
+
+
