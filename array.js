@@ -13,6 +13,6 @@ a[-23] = 3489
 a['place'] ="chennai"
 b={sno:1,name:"Lokesh"}
 a[b] = " Javascript Object"
-
+a[true] = " True value"
 console.log(a.length , " is the size of array")
 console.log(a)
