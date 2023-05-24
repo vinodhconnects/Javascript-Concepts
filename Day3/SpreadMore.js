@@ -4,5 +4,9 @@ candidate = person  //pass by reference
 
 candidate.skills = ["JAva","C#","PHP"]
 
+member = {...person, city: "Mumbai", 
+interests : ["Singing","Cricket", "Gaming"]}
+
 console.log(person)
 console.log(candidate)
+console.log(member)
