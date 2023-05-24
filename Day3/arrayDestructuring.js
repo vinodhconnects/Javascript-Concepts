@@ -10,3 +10,7 @@ team = [ {name: "Raj" , role :"Lead"},
 
 const [member1, member2, member3] = team
 console.log(member2)
+
+const {name: member2Name} = member2
+
+console.log(member2Name)
