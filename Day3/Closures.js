@@ -21,3 +21,4 @@ function outer(b) {
 }
 
 outer("King")
+//outer.inner()
