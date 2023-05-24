@@ -8,17 +8,22 @@
 function outer(b) {
     state = 1
     function inner() {
-        console.log(state," is accessible within inner")
+        console.log(state," is outer state")
         console.log(b, "in inner function")
         innerstate=1
-        console.log(innerstate , " within innerfuction")
+        console.log(innerstate , " is inner state")
         state++;
         innerstate++;
     }
     console.log(state ,"accessed within outer")
-    inner()
+    //inner()  --- Working version
     //console.log(innerstate, "accessed within outer") //not possible
+    return inner
 }
 
-outer("King")
+result=outer("King")
+console.log(result)
+result()
+result()
+result()
 //outer.inner()
