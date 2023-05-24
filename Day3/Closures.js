@@ -5,17 +5,19 @@
 // if fun a needs function b and it does not want anything outside 
 // the function to use it we can declare b as in inner function
 
-function outer() {
+function outer(b) {
     state = 1
     function inner() {
         console.log(state," is accessible within inner")
+        console.log(b, "in inner function")
         innerstate=1
         console.log(innerstate , " within innerfuction")
         state++;
         innerstate++;
     }
     console.log(state ,"accessed within outer")
-    console.log(innerstate, "accessed within outer") //not possible
+    inner()
+    //console.log(innerstate, "accessed within outer") //not possible
 }
 
-outer()
+outer("King")
