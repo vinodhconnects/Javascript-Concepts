@@ -4,7 +4,7 @@ console.log(person.name)
 
 const {sno,name,city} = person
 
-//destructing with alias
+//destructuring with alias
 
 const {sno: id, name:fname, city: place} =person  
 console.log(name)
