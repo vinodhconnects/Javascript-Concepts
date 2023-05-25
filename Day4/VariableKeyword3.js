@@ -1,5 +1,6 @@
 //global, function scope and local scope
 //console.log(a)
+//var a=20
 a=20
 
 function printer(){
