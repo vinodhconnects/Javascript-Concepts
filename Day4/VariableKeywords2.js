@@ -3,9 +3,9 @@
 a=20
 
 function printer(){
-   // a=35
+   var a=35 //function scope
     console.log("a:",a)
-    a=50
+     a=50
 }
 
 printer()
