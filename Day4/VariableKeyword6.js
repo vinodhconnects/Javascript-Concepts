@@ -1,7 +1,7 @@
-
+const a=900
 
 function demoVariable (){
-   const a=30
+  var a=30
     console.log("Within the outer range a is",a)
     {
         let a=90 //error local scope is already declared
