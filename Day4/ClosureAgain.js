@@ -8,11 +8,11 @@ function outer(){
     return inner
 }
 
- fun = outer();
+ fun = outer()
  fun2 = outer()
- fun();  //30
- fun();  //31
- fun(); //32
- fun2(); //33
- fun()
- fun2()
+ fun()  //30
+ fun()  //31
+ fun() //32
+ fun2() //30
+ fun() //33
+ fun2() //31

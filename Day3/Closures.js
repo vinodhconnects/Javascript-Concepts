@@ -22,6 +22,7 @@ function outer(b) {
 }
 
 result=outer("King")
+//result2=outer("king")
 console.log(result)
 result()
 result()
