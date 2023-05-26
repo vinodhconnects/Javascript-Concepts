@@ -1,6 +1,6 @@
 #  Concepts Explored
 
-######Javascript
+### Javascript
 
   * Not a Strictly typed
   * Declaring scalar variables
