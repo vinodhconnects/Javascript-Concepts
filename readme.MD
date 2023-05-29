@@ -24,4 +24,11 @@
   * Keywords Related to Variables[ const, var , let and global variables]
   * global vs function vs local scopes
   * Callback [ Passing function as a parameter ]
+  * Prototype Functions
+  * Classes
+  * Arrow Functions
+  * Binding this keyword 
+  * resolving bind using arrow functions
 		 
+
+------------------
