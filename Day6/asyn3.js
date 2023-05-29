@@ -13,17 +13,17 @@ return new Promise (function(resolve,reject) {
 })
 }
 
-function callerLogic(){
-   var result = giveMeWhatIask("fruits") //function that returns
-                       //promise
-   result.then(
-     (data) => 
-     {
-        console.log("received ",data)
-        console.log("Follow up logic")
-     },
-     (error) => console.log("Rejected with message",error)
-   )
+async function callerLogic(){
+   try {
+    var result = await giveMeWhatIask("spices") //function that returns
+                                                 //promise
+   
+        console.log("received ",result)
+        console.log("follow up logic")
+    }
+   catch(e){
+        console.log(e)
+   }
    
 }
 
