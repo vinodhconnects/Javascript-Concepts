@@ -1,5 +1,12 @@
-numbers=[353,634,34,345,65,34,335,4365,34,34]
+numbers=[1,2,3,4,5,6,7]
+/*
+  1,2 => 3    (3)
+  3,3 => 6   (6)
+  6,4 => 10 (10)
+  10,5 => 15 (15)
 
+
+*/
 // filter, map, reduce
 //number.filter(callback)
 //callback must return boolean, if true is returned element is retained
